@@ -4,19 +4,21 @@ This is the JavaScript section of the frontend style guide.
 
 It's a common to attach a handler to a scroll or resize event.  For example you might want to show some content when the user has scrolled to a certain point on the webpage.  Below is an example of attaching a handler directly to the window scroll event but doing so is bad practice.  
 
-	$(window).scroll(function() {
-		var $nav = $('nav');
+````javascript
+$(window).scroll(function() {
+	var $nav = $('nav');
 
-		//Check to see if we are over 100 pixels from the top of the page
-		if($(window).scrollTop() > 100) {
-			//Add a class to the nav element so we can fix it to the top of the screen
-			if(!$nav.hasClass('fixed')) {
-				$nav.addClass('fixed');
-			}
-		} else {
-			$nav.removeClass('fixed');
+	//Check to see if we are over 100 pixels from the top of the page
+	if($(window).scrollTop() > 100) {
+		//Add a class to the nav element so we can fix it to the top of the screen
+		if(!$nav.hasClass('fixed')) {
+			$nav.addClass('fixed');
 		}
-	});
+	} else {
+		$nav.removeClass('fixed');
+	}
+});
+````
 
 It's bad practice because this event fires for every scroll movement, so scrolling the entire length of a web page can fire over 100 times depending on the length, it may well be more than that.  You can visually see this by placing a `console.log()` inside your handler.  If the event fires 100 times it means the code insider your handler will fire 100 times which is inefficient, instead we want to delay it.  
 
