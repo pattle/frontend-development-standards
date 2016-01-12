@@ -11,9 +11,11 @@ Markup your content in a semantic way to allow search engines and screen readers
 </div>
 <div id="main-content">
 	<div class="article">
-		<h1>Article heading</h1>
+		<h1>Learn about tigers</h1>
 		<span>Posted on: 01/01/2016 </span>
-		<p>This is the content of the article</p>
+		<p>This is the content of the article about tigers</p>
+		<p>History</p>
+		<p>Some text detailing the history of tigers</p>
 	</div>
 </div>
 <div id="sidebar">
@@ -38,25 +40,28 @@ Below is the same page but the HTML has now been written in a semantic way.  Bot
 </nav>
 <main>
 	<div class="article">
-		<h1>Article heading</h1>
+		<h1>Learn about tigers</h1>
 		<span>Posted on: <time>01/01/2016</time></span>
-		<p>This is the content of the article</p>
+		<p>This is the content of the article about tigers</p>
+		<h2>History</h2>
+		<p>Some text detailing the history of tigers</p>
 	</div>
 </main>
 <aside id="sidebar">
 	<h4>Also in this section</h4>
 	<nav class="secondary">
-	<ul>
-		<li>
-			<a href="https://www.google.co.uk/search?q=tiger" title="Search Google for tigers">Tigers</a>
-		</li>
-		<li>
-			<a href="https://en.wikipedia.org/wiki/Bengal_tiger" title="Visit Wikipedia to find out more about the Bengal tiger">Bengal tiger</a>
-		</li>
-		<li>
-			<a href="http://www.savetigersnow.org/" title="Find out how to save tigers from extinction">Save tigers now</a>
-		</li>
-	</ul>
+		<ul>
+			<li>
+				<a href="https://www.google.co.uk/search?q=tiger" title="Search Google for tigers">Tigers</a>
+			</li>
+			<li>
+				<a href="https://en.wikipedia.org/wiki/Bengal_tiger" title="Visit Wikipedia to find out more about the Bengal tiger">Bengal tiger</a>
+			</li>
+			<li>
+				<a href="http://www.savetigersnow.org/" title="Find out how to save tigers from extinction">Save tigers now</a>
+			</li>
+		</ul>
+	</nav>
 </aside>
 <footer>
 	<!-- Footer content -->
