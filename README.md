@@ -6,5 +6,6 @@ If you wish to add anything or you think any of the content could be improved pl
 
 Below is a list of sections
 
+- [HTML](html.md)
 - [JavaScript](javascript.md)
 - [Images](images.md)
