@@ -74,6 +74,43 @@ Below is the same page but the HTML has now been written in a semantic way.  Bot
 <!DOCTYPE html>
 ````
 
+### Use HTML5 input types
+
+Filling out a form can be harder on mobile devices but using the correct input type can make this easier for the user.  HTML5 introduced the following new input types.  
+
+- time
+- date
+- datetime
+- datetime-local
+- week
+- month
+- email
+- tel
+- color
+- number
+- range
+- search
+- tel
+- url
+
+If you have an input where you are expecting a date to be entered then set the input type to date because this should bring up the device's native datepicker.  
+
+````html
+<input type="date" name="arrival-date" placeholder="01/01/2016" />
+````
+
+![iOS date input](images/ios-date-input.jpg "iOS keyboard when using date input")
+
+Using the datepicker is easier for the user than having to navigate to the numbers and symbols section of their keyboard.  
+
+Similarly if you have a field that requires a number to be entered use the number input type.  On iOS this automatically brings up the numbers section of the keyboard.  
+
+````html
+<input type="number" name="age-years" placeholder="Enter your age" />
+````
+
+![iOS number input](images/ios-date-input.jpg "iOS keyboard when using number input")
+
 ### Always add titles to links
 
 For accessibility anchor tags should always have a title attributes that provide more detail about where the link is taking you.  Don't just repeat the anchor text so rather than doing
