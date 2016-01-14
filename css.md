@@ -40,6 +40,31 @@ Organising your CSS at the start of a project is a lot easier that trying to do 
 ### Minify your CSS
 There are tools like [Grunt](http://gruntjs.com/) and [Gulp](http://gulpjs.com/) that will do this for you automatically whenever you modify and save a file.  
 
+### Don't mix relative and non relative units
+
+When setting font-size and line-height don't mix relative and non relative units.  The following is bad
+
+````css
+h4 {
+	font-size: 1.2rem;
+	line-height: 15px;
+}
+
+p {
+	font-size: 15px;
+	line-height: 1.5rem;
+}
+````
+
+Instead you should do
+
+````css
+h4 {
+	font-size: 1.2rem;
+	line-height: 1.3rem;
+}
+````
+
 ### Style by class not id
 
 To minimise the size of your CSS files try to avoid styling element by id and use classes instead.  The beauty of classes is that you can resuse them as much as your want so move styles into classes to avoid duplication
