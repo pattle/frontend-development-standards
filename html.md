@@ -116,7 +116,7 @@ Similarly if you have a field that requires a number to be entered use the numbe
 
 ### Don't add too many comments to your HTML
 
-Your HTML should be semantic and easy to read so its normally unneccasery to add comments.  If you need to add comments to explain anything you've probably done something wrong.  
+Your HTML should be semantic and easy to read so its normally unnecessary to add comments.  If you need to add comments to explain anything you've probably done something wrong.  
 
 ### Always add titles to links
 
