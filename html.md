@@ -30,6 +30,7 @@ Markup your content in a semantic way to allow search engines and screen readers
 	<!-- Footer content -->
 </div>
 ```
+
 Below is the same page but the HTML has now been written in a semantic way.  Both users and search engines can now understand what each element contains.
 
 
@@ -112,6 +113,10 @@ Similarly if you have a field that requires a number to be entered use the numbe
 ````
 
 ![iOS number input](images/ios-date-input.jpg "iOS keyboard when using number input")
+
+### Don't add too many comments to your HTML
+
+Your HTML should be semantic and easy to read so its normally unneccasery to add comments.  If you need to add comments to explain anything you've probably done something wrong.  
 
 ### Always add titles to links
 

@@ -37,6 +37,22 @@ After creating these four stylesheets I then like to componentise any remaining 
 
 Organising your CSS at the start of a project is a lot easier that trying to do it halfway through, so find a logical file structure that works for you and stick to it.  
 
+### Keep a top down structure
+
+Try to keep your CSS selectors in the order that they appear in your HTML so for example make sure that any header styles appear before footer styles.  
+
+````css
+header {
+	/* Header style */
+}
+
+footer {
+	/* Header style */
+}
+````
+
+This just keeps your HTML and CSS in sync.  
+
 ### Minify your CSS
 There are tools like [Grunt](http://gruntjs.com/) and [Gulp](http://gulpjs.com/) that will do this for you automatically whenever you modify and save a file.  
 
