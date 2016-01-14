@@ -1,4 +1,4 @@
-This is the images section of the frontend style guide.
+This is the images section of the front-end development standards
 
 ### Don't use bigger images that you need
 

@@ -1,4 +1,4 @@
-This is the JavaScript section of the frontend style guide.
+This is the JavaScript section of the front-end development standards
 
 ### Use setTimeout to delay scroll and resize event handlers
 

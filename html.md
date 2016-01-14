@@ -1,3 +1,5 @@
+This is the HTML section of the front-end development standards
+
 ### Make your HTML semantic
 
 Markup your content in a semantic way to allow search engines and screen readers to better understand the nature of the content.  Rather than using elements like `<div>` and `<span>` which don't have any meaning make use of HTML5's semantic elements.  Below is an example of what a webpage might have looked like pre HTML5 where id's are being used to state what each element contains.

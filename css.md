@@ -1,4 +1,4 @@
-This is the CSS section of the frontend style guide.
+This is the CSS section of the front-end development standards
 
 ### Use a CSS reset
 
