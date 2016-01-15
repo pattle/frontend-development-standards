@@ -10,3 +10,4 @@ Below is a list of sections
 - [CSS](css.md)
 - [JavaScript](javascript.md)
 - [Images](images.md)
+- [Responsive](responsive.md)
