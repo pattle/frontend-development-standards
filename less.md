@@ -2,6 +2,7 @@
 
 Any values that you are going to repeat should be stored in variables so they are easier to maintain
 
+````less
 /* Like class names don't name variables after colours */
 @primary-colour: #ed4f4e;
 @secondary-colour #3c763d;
@@ -23,6 +24,7 @@ Any values that you are going to repeat should be stored in variables so they ar
 @laptop-down: ~"(max-width: @{screen-md})";
 @laptop-up: ~"(min-width: @{screen-sm})";
 @desktop~"(min-width: @{screen-lg})";
+````
 
 ### Don't nest unnecessarily
 
@@ -30,7 +32,7 @@ Don't nest just for the sake of nesting as it makes your LESS files too verbose.
 
 Bad
 
-````css
+````less
 nav {
 	border-bottom: 1px solid #cccccc;
 
@@ -47,7 +49,7 @@ nav {
 
 Good
 
-````css
+````less
 nav {
 	border-bottom: 1px solid #cccccc;
 
