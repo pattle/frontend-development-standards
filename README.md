@@ -8,6 +8,7 @@ Below is a list of sections
 
 - [HTML](html.md)
 - [CSS](css.md)
+- [LESS](less.md)
 - [JavaScript](javascript.md)
 - [Images](images.md)
 - [Responsive](responsive.md)
