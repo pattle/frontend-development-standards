@@ -81,6 +81,23 @@ h4 {
 }
 ````
 
+#### Using rem's and pixels
+
+Root ems have slightly better browser support than ems but to maximise support you can define the font size in pixels as a fallback.  If you set the base font size as 62.5% you define the font size in pixels followed by the same value divided by 10 in rems.  
+
+````css
+body {
+	font-size: 62.5%;
+}
+
+p {
+	font-size: 15px; /* Fallback for older browsers */
+	font-size: 1.5rem;
+}
+````
+
+Thanks to [discodavey](https://github.com/discodavey) for this one.  
+
 ### Style by class not id
 
 To minimise the size of your CSS files try to avoid styling element by id and use classes instead.  The beauty of classes is that you can resuse them as much as your want so move styles into classes to avoid duplication
