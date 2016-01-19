@@ -162,7 +162,7 @@ p {
 This goes for anything that may change over time.  Consider the below example
 
 ````css
-a.orange-link{
+.orange-link {
 	color: orange;
 }
 ````
