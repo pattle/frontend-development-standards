@@ -83,16 +83,21 @@ h4 {
 
 #### Using rem's and pixels
 
-Root ems have slightly better browser support than ems but to maximise support you can define the font size in pixels as a fallback.  If you set the base font size as 62.5% you define the font size in pixels followed by the same value divided by 10 in rems.  
+Root ems have slightly better browser support than ems but to maximise support you can define the font size in pixels as a fallback.  If you set the base font size on the html element as 62.5% you can then define the font size in pixels followed by the same value divided by 10 in rems.  
 
 ````css
-body {
+html {
 	font-size: 62.5%;
 }
 
-p {
+body {
 	font-size: 15px; /* Fallback for older browsers */
 	font-size: 1.5rem;
+}
+
+h1 {
+	font-size: 24px; /* Fallback for older browsers */
+	font-size: 2.4rem;
 }
 ````
 
@@ -135,6 +140,22 @@ Let's move some of those styles that we are likely to use again and create class
 In the future you can then reuse those classes on other element thus cutting down on the amount of CSS needed.  
 
 If you are using LESS or SASS you can use mixins to add in properties from existing styles.  
+
+### Don't specify units for 0 values
+
+The CSS specification states that you shouldn't specify units when using 0 values and as they have no purpose its best to omit them.  
+
+````css
+/* Bad */
+p {
+	margin: 0px 0px 15px 0;
+}
+
+/* Good */
+p {
+	margin: 0 0 15px 0; /* It's also easier to read */
+}
+````
 
 ### Don't name your selectors after colours
 
