@@ -148,7 +148,7 @@ The CSS specification states that you shouldn't specify units when using 0 value
 ````css
 /* Bad */
 p {
-	margin: 0px 0px 15px 0;
+	margin: 0px 0px 15px 0px;
 }
 
 /* Good */
