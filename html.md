@@ -42,13 +42,13 @@ Below is the same page but the HTML has now been written in a semantic way.  Bot
 	<!-- Primary navigation -->
 </nav>
 <main>
-	<div class="article">
+	<article>
 		<h1>Learn about tigers</h1>
 		<span>Posted on: <time>01/01/2016</time></span>
 		<p>This is the content of the article about tigers</p>
 		<h2>History</h2>
 		<p>Some text detailing the history of tigers</p>
-	</div>
+	</article>
 </main>
 <aside id="sidebar">
 	<h4>Also in this section</h4>
@@ -123,13 +123,13 @@ Your HTML should be semantic and easy to read so its normally unnecessary to add
 For accessibility anchor tags should always have a title attributes that provide more detail about where the link is taking you.  Don't just repeat the anchor text so rather than doing
 
 ````html
-<a href="http://www.bbc.co.uk" title="Click here">Click here</a>
+<a href="http://www.bbc.co.uk" title="BBC">BBC</a>
 ````
 
 Do the following.
 
 ````html
-<a href="http://www.bbc.co.uk" title="Go to the BBC website">Click here</a>
+<a href="http://www.bbc.co.uk" title="Go to the BBC website">BBC</a>
 ````
 
 ### Always use alt attributes on images
@@ -137,7 +137,7 @@ Do the following.
 To enable screen readers and search engine to more easily understand what your images contain use the alt attribute.  
 
 ````html
-<img src="tiger.jpg" alt="Begnal tiger hunting in long grass" />
+<img src="tiger.jpg" alt="Bengal tiger hunting in long grass" />
 ````
 
 ### Avoid inline CSS and JavaScript
