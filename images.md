@@ -17,7 +17,11 @@ This one is a bit of a no brainer but it often gets forgotten.  When using image
 
 ### Use SVG, its scalable!
 
-For simple images consider using SVG.  You'll find that the file size is small and it can increase in size without losing quality because as the name says its scalable
+For simple images such as icons consider using SVG.  You'll find that the file size is small and it can increase in size without losing quality because as the name says its scalable
+
+### Aim for the smallest image size
+
+PNG's are great because they support transparency but they also come at a cost of larger file size.  Think about what image type is appropriate for what you're doing and then select the correct one accordingly.  Always try to get the smallest image size possible.  Images shouldn't be used to achieve gradient effects as 99% of the time this can be done using CSS.  
 
 ### Don't hide images using display: none
 
