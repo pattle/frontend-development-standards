@@ -16,7 +16,7 @@ Stylesheets can get very big very quickly which can make them troublesome to mai
 /* CSS Reset */
 @import url("reset.css");
 
-/* My default for base elements */
+/* My defaults for base elements */
 @import url("defaults.css");
 
 /* Helper classes for common styles */
@@ -140,6 +140,37 @@ Let's move some of those styles that we are likely to use again and create class
 In the future you can then reuse those classes on other element thus cutting down on the amount of CSS needed.  
 
 If you are using LESS or SASS you can use mixins to add in properties from existing styles.  
+
+### Avoid location based selectors
+
+Consider the following HTML
+
+````html
+<main id="main-content">
+	<article class="news">
+		<!-- News content -->
+	</article>
+</main>
+<aside id="sidebar">
+	<div class="author-profile">
+		<!-- Author information -->
+	</div>
+</aside>
+````
+
+If we want to style the `.author-profile` element avoid using the location in the selector because if we move this element to another area of the page it shouldn't affect how it displays.  
+
+````css
+/* Bad */
+#sidebar .author-profile {
+	
+}
+
+/* Good */
+.author-profile {
+	
+}
+````
 
 ### Don't specify units for 0 values
 
