@@ -201,4 +201,4 @@ This goes for anything that may change over time.  Consider the below example
 Colours are typically something that are changed regulary and tweaked by clients.  If they decide the primary colour they want for links is red instead of orange then our class is now misleading.  You could change the class name but then you'd have to replace every instance of this class in your HTML or the chances are it would remain  `.orange-link` and cause confusion to future developers.
 
 ### Don't rely on !important
-!important should only be used when you want to override CSS in a stylesheet that you don't have control off.  Using it in any other scenario is laziness as it can be avoided by using more specific selectors or organising your CSS better.  
+`!important` should only be used when you want to override CSS in a stylesheet that you don't have control off.  Using it in any other scenario is laziness as it can be avoided by using more specific selectors or organising your CSS better.  
