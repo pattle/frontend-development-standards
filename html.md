@@ -148,6 +148,14 @@ To enable screen readers and search engine to more easily understand what your i
 
 Inline styles make your HTML messy and harder to maintain.  
 
+### Prefix any ID's or classes used by your JavaScript
+
+To make it clear that an ID or a class is being used by as a selector by your JavaScript you can prefix it with "js-".  At a later date if you or someone else is looking through your code it makes it more readable.  
+
+````html
+<a class="js-open-map" title="Find out where we are located and how to contact us">Contact us</a>
+````
+
 ### Validate your HTML
 
 If you're experiencing bugs or cross browers problems then validating your HTML is a good debugging tool.  You're less likely to get bugs in valid well formed documents.
